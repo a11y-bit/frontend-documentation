@@ -138,6 +138,52 @@
                 <li><code><strong>&lt;bdo&gt;</strong></code> : It stands for Bi-Directional Override. This tag is used to override the current text direction, e.g. &lt;bdo dir="rtl"&gt;This text will be written from right to left.&lt;/bdo&gt; This will print: <bdo dir="rtl">This text will be written from right to left.</bdo></li>
             </ul>
         </div>
+        <div>
+            <h2>HTML Links</h2>
+            <p>HTML links are used to connect web pages to one another. They allow you to click on a piece of text or an image and be taken to a different web page, or to a specific location within the current page.</p>
+            <p>Here's an example of an HTML link:</p>
+            <code><strong>&lt;a href="http://www.example.com"&gt;Click here to go to Example.com&lt;/a&gt;</strong></code>
+            <p>The <strong>a</strong> element is used to create a link, and the <strong>href</strong> attribute specifies the destination of the link. The text between the <strong>a</strong> tags is the text that will be displayed as the link.</p>
+            <h3>Target attribute</h3>
+            <p>You can also use the <strong>target</strong> attribute to control where the linked page should be opened. It can have one of the following values:</p>
+            <ul>
+                <li>_self: Default, Opens the document in the same window/tab as it was clicked</li>
+                <li>_blank: Opens the document in a new window or tab</li>
+                <li>_parent: Opens the document in the parent frame</li>
+                <li>_top: Opens the document in the full body of the window</li>
+            </ul>
+            <p>For example, to open the link in a new browser window or tab, you can use <strong>target="_blank"</strong></p>
+            <code><strong>&lt;a href="http://www.example.com" target="_blank"&gt;Click here to go to Example.com in a new window&lt;/a&gt;</strong></code>
+            <h3>Bookmarks</h3>
+            <p>Links can also be used to jump to a specific location within the same web page. This is done by using a link with a <strong>href</strong> attribute that begins with a <strong>#</strong> symbol, followed by the ID of the element you want to link to.</p>
+            <p>Here's an example:</p>
+            <code><strong><pre>
+&lt;a href="#section1"&gt;Jump to Section 1&lt;/a&gt;
+...
+&lt;h2 id="section1"&gt;Section 1&lt;/h2&gt;
+            </pre></strong></code>
+            <p>In this example, clicking on the link will take the user to the element with the ID "section1" on the same page. We can also jump to another page's bookmark <code><strong>(href="anotherpage.html#section2")</strong></code></p>
+            <h3>mailto</h3>
+            <p>A <strong>"mailto:"</strong> link is a type of HTML link that allows a user to send an email to a specific email address by clicking on the link. When the user clicks on the link, their default email client (e.g., Microsoft Outlook, Gmail) will open a new email message with the "To:" field already filled in with the email address specified in the link.</p>
+            <p>Here is an example of a mailto: link:</p>
+            <code><strong>&lt;a href="mailto:info@example.com"&gt;Send an email to info@example.com&lt;/a&gt;</strong></code>
+            <p>When the user clicks on this link, their email client will open a new message with the "To:" field already filled in with "info@example.com". The user can then enter a subject and message and send the email as they normally would.</p>
+            <p>You can also specify other parameters in the mailto: link to pre-populate other fields in the email message, such as the subject, cc, and bcc fields. For example:</p>
+            <code><strong>&lt;a href="mailto:info@example.com?subject=Inquiry&cc=sales@example.com&bcc=marketing@example.com"&gt;Send an email to info@example.com&lt;/a&gt;</strong></code>
+            <p>In this example, when the user clicks on the link, their email client will open a new message with the "To:" field already filled in with "info@example.com", the "Subject:" field already filled in with "Inquiry", and the "Cc:" and "Bcc:" fields already filled in with "sales@example.com" and "marketing@example.com", respectively.</p>
+            <h3>Title attribute in anchor tag</h3>
+            <p>The <strong>title</strong> attribute in an anchor tag <code><strong>&lt;a&gt;</strong></code> specifies a text to be displayed as a tooltip when the mouse pointer hovers over the anchor element. The <strong>title</strong> attribute is commonly used to provide a brief description or additional information about the linked content.</p>
+            <p>Here is an example of using the title attribute in an anchor tag:</p>
+            <code><strong>&lt;a href="https://example.com" title="Learn more about Example"&gt;Example&lt;/a&gt;</strong></code>
+            <p>In this example, the text "Learn more about Example" will be displayed as a tooltip when the mouse pointer hovers over the anchor element.</p>
+            <p>It's important to note that the <strong>title</strong> attribute is not intended to provide additional information about the link's destination. Instead, it should be used to provide additional context or information about the link itself. If you want to provide information about the destination of the link, it's generally a better practice to include that information in the linked content itself.</p>
+            <h3>Absolute and Relative URLs</h3>
+            <p>An absolute URL is a complete web address that includes the protocol (such as "http" or "https"), the domain name, and the path to a specific file or resource.</p>
+            <p>A relative URL, on the other hand, is a web address that is relative to the current page. It specifies the path to a file or resource using only the necessary information, and does not include the protocol or domain name.</p>
+            <p>For example, consider a page located at "https://www.example.com/path/to/page.html". If this page includes a link to an image located at "https://www.example.com/path/to/image.jpg", the URL for the image would be an absolute URL. If the page includes a link to another page located at "../otherpage.html", the URL for the other page would be a relative URL.</p>
+            <p>Absolute URLs are useful when linking to resources that are not on the same server or domain as the current page. Relative URLs are useful when linking to resources that are on the same server or domain, as they allow you to specify the path to the resource relative to the current page, making it easier to move pages around within a site without having to update all of the URLs.</p>
+        </div>
+
     </div>
 </body>
 </html>
