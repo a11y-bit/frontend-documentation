@@ -183,6 +183,36 @@
             <p>For example, consider a page located at "https://www.example.com/path/to/page.html". If this page includes a link to an image located at "https://www.example.com/path/to/image.jpg", the URL for the image would be an absolute URL. If the page includes a link to another page located at "../otherpage.html", the URL for the other page would be a relative URL.</p>
             <p>Absolute URLs are useful when linking to resources that are not on the same server or domain as the current page. Relative URLs are useful when linking to resources that are on the same server or domain, as they allow you to specify the path to the resource relative to the current page, making it easier to move pages around within a site without having to update all of the URLs.</p>
         </div>
+        <div>
+            <h2>Images in HTML</h2>
+            <p>To display an image in an HTML page, you can use the <strong>img</strong> element. Images are not technically inserted into a web page, images are linked to web pages, The <strong>img</strong> tag creates a holding space for the referenced image. The <strong>img</strong> element is an empty element, which means it has no content and does not require a closing tag.</p>
+            <p>Here is an example of how you can use the <strong>img</strong> element to display an image in an HTML page:</p>
+            <code><strong>&lt;img src="image.jpg" alt="A description of the image"&gt;</strong></code>
+            <p>The <strong>src</strong> attribute specifies the URL of the image. The <strong>alt</strong> attribute provides an alternate text for the image, which can be displayed if the image cannot be displayed or if the user is using a screen reader.</p>
+            <p>You can also specify the width and height of the image using the <strong>width</strong> and <strong>height</strong> attributes, respectively. For example:</p>
+            <code><strong>&lt;img src="image.jpg" alt="A description of the image" width="200" height="100"&gt;</strong></code>
+            <p>This will display the image with a width of 200 pixels and a height of 100 pixels.</p>
+            <p>You can also use the <strong>img</strong> element to display images that are stored on other websites by specifying the URL of the image in the <strong>src</strong> attribute. For example:</p>
+            <code><strong>&lt;img src="https://www.example.com/image.jpg" alt="A description of the image"&gt;</strong></code>
+            <p>Note that you need to have permission to use an image from another website.</p>
+        </div>
+        <div>
+            <h2>Favicon</h2>
+            <p>A favicon (short for "favorite icon") is a small, iconic image that represents your website or brand. It is displayed in the browser tab, bookmark, and in the history of the browser.</p>
+            <p>To add a favicon to your HTML page, you can use the <strong>link</strong> element in the <strong>head</strong> of your HTML document. The <strong>link</strong> element should have a <strong>rel</strong> attribute with a value of "icon" or "shortcut icon", and a <strong>href</strong> attribute with the URL of the favicon image file. Here's an example:</p>
+            <code><strong>&lt;link rel="shortcut icon" href="/path/to/favicon.ico"&gt;</strong></code>
+            <p>The favicon file should be a small image in .ico format. You can also use other image formats such as .png or .gif, but .ico is the most widely supported format.</p>
+            <p>It's a good idea to provide multiple sizes of the favicon image to support different devices and resolutions. You can do this by using the <strong>link</strong> element with different <strong>sizes</strong> attributes, like this:</p>
+            <code><strong>
+                <pre>
+&lt;link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png"&gt;
+                </pre>
+            </strong></code>
+            <p>You can also use the <strong>link</strong> element with a <strong>rel</strong> attribute of "apple-touch-icon" to specify a favicon for Apple devices:</p>
+            <code><strong>&lt;link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png"&gt;</strong></code>
+            <p>Note that the favicon may not be displayed immediately when you add it to your HTML page. The browser may need to load the page again or the user may need to refresh the page to see the favicon.</p>
+        </div>
 
     </div>
 </body>
