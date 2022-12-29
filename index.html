@@ -213,6 +213,199 @@
             <code><strong>&lt;link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png"&gt;</strong></code>
             <p>Note that the favicon may not be displayed immediately when you add it to your HTML page. The browser may need to load the page again or the user may need to refresh the page to see the favicon.</p>
         </div>
+        <div>
+            <h2>Tables</h2>
+            <p>HTML tables allow you to present data in a grid format, making it easy for users to read and compare information. Let's get started with the basics.</p>
+            <ol>
+                <li><p>Creating a table</p></li>
+                <p>To create a table in HTML, you will need to use the "table" element. Inside the table element, you can define rows using the "tr" element and cells using the "td" element. Here is an example of a basic table with two rows and two cells in each row:</p>
+                <mark>Sample Input</mark><br>
+                <code><strong>                    
+                    &lt;table&gt;<br>
+                        &lt;tr&gt;<br>
+                        &lt;td&gt;Cell 1&lt;/td&gt;<br>
+                        &lt;td&gt;Cell 2&lt;/td&gt;<br>
+                        &lt;/tr&gt;<br>
+                        &lt;tr&gt;<br>
+                        &lt;td&gt;Cell 3&lt;/td&gt;<br>
+                        &lt;td&gt;Cell 4&lt;/td&gt;<br>
+                        &lt;/tr&gt;<br>
+                    &lt;/table&gt;
+                </strong></code><br>
+                <mark>Sample Output</mark><br>
+                <table>
+                    <tr>
+                      <td>Cell 1</td>
+                      <td>Cell 2</td>
+                    </tr>
+                    <tr>
+                      <td>Cell 3</td>
+                      <td>Cell 4</td>
+                    </tr>
+                  </table>
+                <li>Adding a table header</li>
+                <p>If you want to add a row at the top of your table with column headings, you can use the "th" element instead of "td". Here is an example of a table with a header row:</p>
+                <mark>Sample Input</mark><br>
+                <code>
+                    <strong>
+                        &lt;table&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;th&gt;Column 1&lt;/th&gt;<br>
+                            &lt;th&gt;Column 2&lt;/th&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Cell 1&lt;/td&gt;<br>
+                            &lt;td&gt;Cell 2&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Cell 3&lt;/td&gt;<br>
+                            &lt;td&gt;Cell 4&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                        &lt;/table&gt;<br>
+                    </strong>
+                </code>
+                <mark>Sample output</mark><br>
+                <table>
+                    <tr>
+                      <th>Column 1</th>
+                      <th>Column 2</th>
+                    </tr>
+                    <tr>
+                      <td>Cell 1</td>
+                      <td>Cell 2</td>
+                    </tr>
+                    <tr>
+                      <td>Cell 3</td>
+                      <td>Cell 4</td>
+                    </tr>
+                </table>
+                <li>Adding table borders</li>
+                <p>By default, tables do not have borders. If you want to add borders to your table, you can use the "border" attribute on the "table" element. For example:</p>
+                <mark>Sample Input</mark><br>
+                <code>
+                    <strong>
+                        &lt;table border="1"&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;th&gt;Column 1&lt;/th&gt;<br>
+                            &lt;th&gt;Column 2&lt;/th&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Cell 1&lt;/td&gt;<br>
+                            &lt;td&gt;Cell 2&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Cell 3&lt;/td&gt;<br>
+                            &lt;td&gt;Cell 4&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                        &lt;/table&gt;<br>
+                    </strong>
+                </code>
+                <mark>Sample Output</mark><br>
+                <table border="1">
+                    <tr>
+                      <th>Column 1</th>
+                      <th>Column 2</th>
+                    </tr>
+                    <tr>
+                      <td>Cell 1</td>
+                      <td>Cell 2</td>
+                    </tr>
+                    <tr>
+                      <td>Cell 3</td>
+                      <td>Cell 4</td>
+                    </tr>
+                </table>                  
+                <li>Adding cell padding and spacing</li>
+                <p>You can use the "cellpadding" and "cellspacing" attributes to add padding (space inside the cell) and spacing (space between cells) to your table. For example:</p>
+                <mark>Sample Input</mark><br>
+                <code>
+                    <strong>
+                        &lt;table border="1" cellpadding="10" cellspacing="5"&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;th&gt;Column 1&lt;/th&gt;<br>
+                            &lt;th&gt;Column 2&lt;/th&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Cell 1&lt;/td&gt;<br>
+                            &lt;td&gt;Cell 2&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Cell 3&lt;/td&gt;<br>
+                            &lt;td&gt;Cell 4&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                        &lt;/table&gt;<br>
+                    </strong>
+                </code>
+                <mark>Sample Output</mark><br>
+                <table border="1" cellpadding="10" cellspacing="5">
+                    <tr>
+                      <th>Column 1</th>
+                      <th>Column 2</th>
+                    </tr>
+                    <tr>
+                      <td>Cell 1</td>
+                      <td>Cell 2</td>
+                    </tr>
+                    <tr>
+                      <td>Cell 3</td>
+                      <td>Cell 4</td>
+                    </tr>
+                </table>                  
+                <li>Merging cells</li>
+                <p>Sometimes you may want to merge cells in your table to create larger cells. You can do this using the "colspan" and "rowspan" attributes. For example, if you want to merge two cells into one cell, you can use the following code:</p>
+                <mark>Sample Input</mark><br>
+                <code>
+                    <strong>
+                        &lt;table border="1"&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td colspan="2"&gt;Merged Cell&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Cell 1&lt;/td&gt;<br>
+                            &lt;td&gt;Cell 2&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                        &lt;/table&gt;<br>
+                    </strong>
+                </code>
+                <mark>Sample Output</mark><br>
+                <table border="1">
+                    <tr>
+                      <td colspan="2">Merged Cell</td>
+                    </tr>
+                    <tr>
+                      <td>Cell 1</td>
+                      <td>Cell 2</td>
+                    </tr>
+                </table>
+                <p>This will result in a table with one row and two columns, with the first column being a merged cell containing the text "Merged Cell" and spanning across both columns. The second row will contain two separate cells with the text "Cell 1" and "Cell 2".</p>
+                <p>You can also use the rowspan attribute to merge cells vertically. For example:</p>
+                <mark>Sample Input</mark><br>
+                <code>
+                    <strong>
+                        &lt;table border="1"&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td rowspan="2"&gt;Merged Cell&lt;/td&gt;<br>
+                            &lt;td&gt;Cell 1&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Cell 2&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                        &lt;/table&gt;<br>
+                    </strong>
+                </code>
+                <mark>Sample Output</mark><br>
+                <table border="1">
+                    <tr>
+                      <td rowspan="2">Merged Cell</td>
+                      <td>Cell 1</td>
+                    </tr>
+                    <tr>
+                      <td>Cell 2</td>
+                    </tr>
+                </table>
+            </ol>
+        </div>
+
 
     </div>
 </body>
