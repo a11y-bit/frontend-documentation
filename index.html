@@ -405,6 +405,109 @@
                 </table>
             </ol>
         </div>
+        <div>
+            <h2>Lists</h2>
+            <p>HTML lists allow you to group a set of related items together and display them in a specific order. There are two types of lists in HTML: ordered lists and unordered lists.</p>
+            <h3>Ordered lists</h3>
+            <p>An ordered list is a list of items that are displayed in a specific numerical or alphabetical order. To create an ordered list in HTML, you will use the <code><strong>&lt;ol&gt;</strong></code> element. Inside the <code><strong>&lt;ol&gt;</strong></code> element, you will add a series of <code><strong>&lt;li&gt;</strong></code> elements, which stands for list item. Each <code><strong>&lt;li&gt;</strong></code> element represents an item in the list.</p>
+            <mark>Code Example</mark><br>
+            <code>
+                <strong>
+                    &lt;ol&gt;<br>
+                        &lt;li&gt;Item 1&lt;/li&gt;<br>
+                        &lt;li&gt;Item 2&lt;/li&gt;<br>
+                        &lt;li&gt;Item 3&lt;/li&gt;<br>
+                    &lt;/ol&gt;<br>
+                </strong>
+            </code>
+            <mark>Output</mark><br>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            <p>You can also specify the starting number of an ordered list using the start attribute. For example:</p>
+            <mark>Code Example</mark><br>
+            <code>
+                <strong>
+                    &lt;ol start="5"&gt;<br>
+                        &lt;li&gt;Item 1&lt;/li&gt;<br>
+                        &lt;li&gt;Item 2&lt;/li&gt;<br>
+                        &lt;li&gt;Item 3&lt;/li&gt;<br>
+                    &lt;/ol&gt;<br>
+                </strong>
+            </code>
+            <mark>Output</mark><br>
+            <ol start="5">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            <h3>Unordered lists</h3>
+            <p>An unordered list is a list of items that are displayed in no particular order. To create an unordered list in HTML, you will use the <code><strong>&lt;ul&gt;</strong></code> element. Inside the <code><strong>&lt;ul&gt;</strong></code> element, you will add a series of <code><strong>&lt;li&gt;</strong></code> elements, just like in an ordered list.</p>
+            <mark>Code Example</mark><br>
+            <code>
+                <strong>
+                    &lt;ul&gt;<br>
+                    &lt;li&gt;Item 1&lt;/li&gt;<br>
+                    &lt;li&gt;Item 2&lt;/li&gt;<br>
+                    &lt;li&gt;Item 3&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                </strong>
+            </code>
+            <mark>Output</mark><br>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <p>By default, unordered lists are displayed with bullet points, but you can change the type of bullet point using the type attribute. For example:</p>
+            <mark>Code Example</mark><br>
+            <code>
+                <strong>
+                    &lt;ul type="square"&gt;<br>
+                        &lt;li&gt;Item 1&lt;/li&gt;<br>
+                        &lt;li&gt;Item 2&lt;/li&gt;<br>
+                        &lt;li&gt;Item 3&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                </strong>
+            </code>
+            <mark>Output</mark><br>
+            <ul type="square">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <p>There are several different types of bullet points you can use, including disc, circle, and none.</p>
+            <h3>Nesting lists</h3>
+            <p>You can nest lists inside of each other to create a hierarchy of items. For example:</p>
+            <mark>Code Example</mark><br>
+            <code>
+                <strong>
+                    &lt;ul&gt;<br>
+                        &lt;li&gt;Item 1<br>
+                        &lt;ol&gt;<br>
+                            &lt;li&gt;Subitem 1&lt;/li&gt;<br>
+                            &lt;li&gt;Subitem 2&lt;/li&gt;<br>
+                        &lt;/ol&gt;<br>
+                        &lt;/li&gt;<br>
+                        &lt;li&gt;Item 2&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                </strong>
+            </code>
+            <mark>Output</mark><br>
+            <ul>
+                <li>Item 1
+                  <ol>
+                    <li>Subitem 1</li>
+                    <li>Subitem 2</li>
+                  </ol>
+                </li>
+                <li>Item 2</li>
+            </ul>
+            <p>You can nest lists of any type inside of each other, so you can have an ordered list inside of an unordered list, or vice versa.</p>
+              
+        </div>
 
 
     </div>
