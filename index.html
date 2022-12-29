@@ -506,7 +506,35 @@
                 <li>Item 2</li>
             </ul>
             <p>You can nest lists of any type inside of each other, so you can have an ordered list inside of an unordered list, or vice versa.</p>
-              
+        </div>
+        <div>
+            <h2>Block level elements and Inline elements</h2>
+            <p>If you're just starting out with HTML, it's important to understand the difference between these two types of elements as they will affect how your content is displayed on a webpage.</p>
+            <p>First, let's define what each type of element is:</p>
+            <ul>
+                <li>Block level elements: These are elements that take up the entire width of their parent container and create a new line after them. Examples of block level elements include paragraphs, headings, and divs.</li>
+                <li>Inline elements: These are elements that only take up as much space as the content inside them and do not create a new line after them. Examples of inline elements include links, images, and spans.</li>
+            </ul>
+            <p>Now, let's go over some examples to help you better understand the difference between these two types of elements:</p>
+            <code><strong>
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                &lt;p&gt;This is another paragraph.&lt;/p&gt;<br>
+            </strong></code>
+            <p>In this example, both "p" elements are block level elements because they take up the entire width of their parent container and create a new line after them. This means that the two paragraphs will be displayed one after the other, with a line break in between.</p>
+            <p>Example 2:</p>
+            <code><strong>&lt;p&gt;This is a paragraph with a &lt;a href="#"&gt;link&lt;/a&gt; in it.</p></strong></code>
+            <p>In this example, the "p" element is a block level element and the "a" element is an inline element. The "a" element only takes up as much space as the content inside it (the text "link") and does not create a new line after it. This means that the link will be displayed within the same line as the rest of the paragraph.</p>
+            <p>Example 3:</p>
+            <code>
+                <strong>
+                    &lt;div&gt;<br>
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                        &lt;p&gt;This is another paragraph.&lt;/p&gt;<br>
+                    &lt;/div&gt;<br>
+                </strong>
+            </code>
+            <p>In this example, both "p" elements are still block level elements because they take up the entire width of their parent container and create a new line after them. However, they are now inside a "div" element, which is also a block level element. This means that the two paragraphs will be displayed one after the other, with a line break in between, and the entire block will be contained within the "div" element.</p>
+            <p>I hope this tutorial has helped you understand the difference between block level elements and inline elements in HTML. Remember, block level elements take up the entire width of their parent container and create a new line after them, while inline elements only take up as much space as the content inside them and do not create a new line after them. </p>
         </div>
 
 
